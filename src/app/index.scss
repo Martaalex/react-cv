@@ -1,0 +1,40 @@
+.App {
+  font-family: 'Courier New', Courier, monospace;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.Header {
+  margin: 35px 0;
+  position: relative;
+
+  h1 {
+    font-size: 24px;
+    font-weight: 700;
+  }
+  hr {
+  }
+  &--contact {
+    font-weight: 700;
+    a {
+      font-weight: 500;
+      color: rgba(141, 141, 141, 0.863);
+      text-decoration: none;
+    }
+  }
+  &--profile-pic {
+    width: 300px;
+    position: absolute;
+    transition: transform 0.3s ease-in;
+    top: 0;
+    right: 25px;
+    transform: rotate(-4deg);
+    &:hover {
+      transform: rotate(0deg);
+    }
+  }
+  &--summary {
+    width: 30em;
+    margin-top: 12px;
+  }
+}
