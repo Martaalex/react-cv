@@ -101,3 +101,12 @@ main {
     }
   }
 }
+.footer {
+  display: flex;
+  justify-content: center;
+  background: rgb(245, 245, 177);
+
+  svg {
+    padding-bottom: 25px;
+  }
+}
