@@ -104,9 +104,16 @@ main {
 .footer {
   display: flex;
   justify-content: center;
-  background: rgb(245, 245, 177);
+  background: #498454;
 
   svg {
-    padding-bottom: 25px;
+    padding: 10px;
+    font-size: 24px;
+    color: #e1e1e1;
+    transition: color 0.3s linear;
+
+    &:hover {
+      color: #ffffff;
+    }
   }
 }

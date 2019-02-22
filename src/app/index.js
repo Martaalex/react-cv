@@ -126,9 +126,22 @@ function App() {
           </section>
         </main>
       </div>
+
       <footer className="footer">
-        <FaGithub />
-        <FaLinkedin />
+        <a
+          href="https://github.com/Martaalex"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <FaGithub />
+        </a>
+        <a
+          href="https://www.linkedin.com/in/marta-aleksandrovi%C4%8D-b19419169/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <FaLinkedin />
+        </a>
       </footer>
     </React.Fragment>
   );
