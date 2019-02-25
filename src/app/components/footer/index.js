@@ -6,8 +6,8 @@ import IconLink from './iconLink';
 function Footer() {
   return (
     <footer className="footer">
-      {data.map(({ href, icon }) => (
-        <IconLink href={href} target="_blank" icon={icon} />
+      {data.map(({ href, icon }, index) => (
+        <IconLink key={index} href={href} icon={icon} />
       ))}
     </footer>
   );

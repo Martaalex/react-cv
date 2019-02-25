@@ -1,29 +1,32 @@
 import React from 'react';
 import './index.scss';
-import minion from '../../../static/minion.jpg';
+
+import data from './data';
 
 function Header() {
   return (
     <header className="Header">
-      <h1>Marta</h1>
+      <h1>{data.name}</h1>
       <hr />
-      <p className="Header--contact">Phone: 862222222</p>
       <p className="Header--contact">
-        E-mail:{' '}
-        <a href="mailto:m@gmail.com" target="_blank" rel="noopener noreferrer">
-          m@gmail.com
+        {`${data.contacts.phone.label} ${data.contacts.phone.value}`}
+      </p>
+      <p className="Header--contact">
+        {`${data.contacts.email.label}`}
+        <a
+          href={`mailto:${data.contacts.email.value}`}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          {`${data.contacts.email.value}`}
         </a>
       </p>
-      <p className="Header--summary">
-        Minions ipsum uuuhhh bappleees jeje po kass tulaliloo bappleees tank
-        yuuu! Uuuhhh belloo! Jeje poulet tikka masala ti aamoo! Chasy hahaha.
-        Underweaaar butt bee do bee do bee do baboiii bee do bee do bee do
-        bananaaaa. Daa la bodaaa jeje para tú ti aamoo! Ti aamoo! Ti aamoo! La
-        bodaaa bappleees la bodaaa. Wiiiii wiiiii daa jiji jeje tatata bala tu
-        me want bananaaa! Underweaaar wiiiii. La bodaaa poopayee daa jiji
-        gelatooo la bodaaa hahaha gelatooo para tú.
-      </p>
-      <img className="Header--profile-pic" alt="me" src={minion} />
+      <p className="Header--summary">{data.summary}</p>
+      <img
+        className="Header--profile-pic"
+        alt={data.pic.alt}
+        src={data.pic.src}
+      />
     </header>
   );
 }
