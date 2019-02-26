@@ -1,119 +1,12 @@
 .App {
-  // font-family: 'Courier New', Courier, monospace;
   max-width: 960px;
+  padding-top: 20px;
   margin: 0 auto;
-}
-
-.Header {
-  margin: 35px 0;
   position: relative;
 
-  h1 {
-    font-size: 24px;
-    font-weight: 700;
-  }
-  hr {
-  }
-  &--contact {
-    font-weight: 700;
-    a {
-      font-weight: 500;
-      color: rgba(141, 141, 141, 0.863);
-      text-decoration: none;
-    }
-  }
-  &--profile-pic {
-    width: 300px;
+  &--language-select {
     position: absolute;
-    transition: transform 0.3s ease-in;
-    top: 0;
-    right: 25px;
-    transform: rotate(-4deg);
-    &:hover {
-      transform: rotate(0deg);
-    }
-  }
-  &--summary {
-    width: 30em;
-    margin-top: 12px;
-  }
-}
-
-main {
-  .Section {
-    display: flex;
-    min-height: 100px;
-    padding: 10px 0;
-
-    &--left {
-      flex: 2;
-      padding: 0 20px;
-      position: relative;
-
-      h3 {
-        font-weight: 700;
-        text-align: right;
-        font-style: italic;
-      }
-      &:after {
-        content: '';
-        height: 100px;
-        width: 1px;
-        position: absolute;
-        top: 0;
-        right: 0;
-        background-color: rgb(165, 165, 165);
-      }
-    }
-
-    &--right {
-      padding: 0 20px;
-      flex: 6;
-
-      &-job-title {
-        display: inline-flex;
-        justify-content: space-between;
-        width: 100%;
-
-        span {
-          font-size: 14px;
-          color: rgba(141, 141, 141, 0.863);
-          opacity: 0.75;
-          font-style: italic;
-          padding-left: 25px;
-          line-height: 22px;
-        }
-      }
-      p span {
-        font-weight: 700;
-      }
-      div {
-        padding-bottom: 15px;
-
-        &:nth-last-child(1) {
-          padding-bottom: 0;
-        }
-      }
-      ul {
-        padding: 10px;
-        list-style: disc inside;
-      }
-    }
-  }
-}
-.footer {
-  display: flex;
-  justify-content: center;
-  background: #498454;
-
-  svg {
-    padding: 10px;
-    font-size: 24px;
-    color: #e1e1e1;
-    transition: color 0.3s linear;
-
-    &:hover {
-      color: #ffffff;
-    }
+    top: 10px;
+    left: 0;
   }
 }
